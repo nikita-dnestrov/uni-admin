@@ -91,8 +91,6 @@ export function ProductForm({
           });
         });
 
-        console.log(images);
-
         setImages(images);
       })();
     }
@@ -200,7 +198,7 @@ export function ProductForm({
                   rules={{ required: true }}
                   render={({ field }) => {
                     return (
-                      <Select onValueChange={(value) => field.onChange(value)}>
+                      <Select value={field.value} onValueChange={(value) => field.onChange(value)}>
                         <SelectTrigger className="w-full">
                           <SelectValue placeholder="" />
                         </SelectTrigger>
@@ -227,7 +225,7 @@ export function ProductForm({
                   rules={{ required: true }}
                   render={({ field }) => {
                     return (
-                      <Select onValueChange={(value) => field.onChange(value)}>
+                      <Select value={field.value} onValueChange={(value) => field.onChange(value)}>
                         <SelectTrigger className="w-full">
                           <SelectValue placeholder="" />
                         </SelectTrigger>
@@ -254,7 +252,7 @@ export function ProductForm({
                   rules={{ required: true }}
                   render={({ field }) => {
                     return (
-                      <Select onValueChange={(value) => field.onChange(value)}>
+                      <Select value={field.value} onValueChange={(value) => field.onChange(value)}>
                         <SelectTrigger className="w-full">
                           <SelectValue placeholder="" />
                         </SelectTrigger>
@@ -281,7 +279,7 @@ export function ProductForm({
                   rules={{ required: true }}
                   render={({ field }) => {
                     return (
-                      <Select onValueChange={(value) => field.onChange(value)}>
+                      <Select value={field.value} onValueChange={(value) => field.onChange(value)}>
                         <SelectTrigger className="w-full">
                           <SelectValue placeholder="" />
                         </SelectTrigger>

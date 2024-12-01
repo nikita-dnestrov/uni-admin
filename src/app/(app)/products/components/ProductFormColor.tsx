@@ -53,7 +53,7 @@ export const ProductFormColor = ({
           </div>
         </CardHeader>
         <CardContent className="flex flex-col gap-5">
-          <Select onValueChange={onColorNameUpdate}>
+          <Select value={colorForm.color} onValueChange={onColorNameUpdate}>
             <SelectTrigger className="w-full">
               <SelectValue placeholder="" />
               <span style={{ background: "pink", width: "50px" }}></span>

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1",
+    "name": "Air Max 270",
+    "brand": "Nike",
+    "description": "Breathable mesh sneakers with exceptional cushioning.",
+    "isArchived": false,
+    "material": "Mesh",
+    "gender": "Unisex",
+    "category": "Sneakers"
+  },
+  {
+    "id": "2",
+    "name": "Superstar",
+    "brand": "Adidas",
+    "description": "Classic low-top sneakers with a retro vibe.",
+    "isArchived": false,
+    "material": "Leather",
+    "gender": "Unisex",
+    "category": "Sneakers"
+  },
+  {
+    "id": "3",
+    "name": "Classic Suede",
+    "brand": "Puma",
+    "description": "Stylish suede shoes for casual outings.",
+    "isArchived": false,
+    "material": "Suede",
+    "gender": "Male",
+    "category": "Sneakers"
+  },
+  {
+    "id": "4",
+    "name": "Club C 85",
+    "brand": "Reebok",
+    "description": "Low-cut sneakers with a vintage tennis-inspired style.",
+    "isArchived": false,
+    "material": "Leather",
+    "gender": "Female",
+    "category": "Sneakers"
+  },
+  {
+    "id": "5",
+    "name": "574 Classic",
+    "brand": "New Balance",
+    "description": "Durable sneakers with a comfortable fit.",
+    "isArchived": false,
+    "material": "Synthetic",
+    "gender": "Unisex",
+    "category": "Sneakers"
+  },
+  {
+    "id": "6",
+    "name": "Chuck Taylor All Star",
+    "brand": "Converse",
+    "description": "Timeless high-top sneakers for everyday wear.",
+    "isArchived": false,
+    "material": "Canvas",
+    "gender": "Unisex",
+    "category": "High-Top Sneakers"
+  },
+  {
+    "id": "7",
+    "name": "Era Core Classics",
+    "brand": "Vans",
+    "description": "Classic skate shoes with a low profile and padded collars.",
+    "isArchived": false,
+    "material": "Canvas",
+    "gender": "Unisex",
+    "category": "Slip-Ons"
+  },
+  {
+    "id": "8",
+    "name": "HOVR Phantom 2",
+    "brand": "Under Armour",
+    "description": "High-performance running shoes with energy-return technology.",
+    "isArchived": false,
+    "material": "Fabric",
+    "gender": "Male",
+    "category": "For Sports"
+  },
+  {
+    "id": "9",
+    "name": "Gel-Kayano 28",
+    "brand": "ASICS",
+    "description": "Stability-focused running shoes with premium cushioning.",
+    "isArchived": false,
+    "material": "Synthetic",
+    "gender": "Female",
+    "category": "For Sports"
+  },
+  {
+    "id": "10",
+    "name": "Work Boots Pro",
+    "brand": "Timberland",
+    "description": "Durable work boots with waterproof technology.",
+    "isArchived": false,
+    "material": "Leather",
+    "gender": "Male",
+    "category": "Boots"
+  },
+  {
+    "id": "11",
+    "name": "Clyde Court",
+    "brand": "Puma",
+    "description": "High-performance basketball shoes with ankle support.",
+    "isArchived": false,
+    "material": "Synthetic",
+    "gender": "Unisex",
+    "category": "For Sports"
+  },
+  {
+    "id": "12",
+    "name": "Formal Elegance",
+    "brand": "Clarks",
+    "description": "Sophisticated dress shoes with a sleek design.",
+    "isArchived": false,
+    "material": "Leather",
+    "gender": "Male",
+    "category": "Dress Shoes"
+  },
+  {
+    "id": "13",
+    "name": "Classic Canvas",
+    "brand": "Converse",
+    "description": "Casual canvas shoes for everyday wear.",
+    "isArchived": false,
+    "material": "Canvas",
+    "gender": "Unisex",
+    "category": "Slip-Ons"
+  },
+  {
+    "id": "14",
+    "name": "PowerCourt",
+    "brand": "Adidas",
+    "description": "Lightweight tennis shoes with a durable outsole.",
+    "isArchived": false,
+    "material": "Fabric",
+    "gender": "Female",
+    "category": "For Sports"
+  },
+  {
+    "id": "15",
+    "name": "Desert Wanderer",
+    "brand": "Clarks",
+    "description": "Sturdy boots for rugged terrains.",
+    "isArchived": false,
+    "material": "Suede",
+    "gender": "Unisex",
+    "category": "Boots"
+  },
+  {
+    "id": "16",
+    "name": "SpeedRunner 3000",
+    "brand": "ASICS",
+    "description": "Ultra-light running shoes with advanced energy return.",
+    "isArchived": false,
+    "material": "Synthetic",
+    "gender": "Male",
+    "category": "For Sports"
+  },
+  {
+    "id": "17",
+    "name": "TrailBlazer XT",
+    "brand": "Nike",
+    "description": "Tough trail shoes designed for off-road adventures.",
+    "isArchived": false,
+    "material": "Mesh",
+    "gender": "Male",
+    "category": "For Sports"
+  }
+]

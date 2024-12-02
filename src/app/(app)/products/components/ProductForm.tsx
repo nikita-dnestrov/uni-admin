@@ -87,7 +87,7 @@ export function ProductForm({
 
         data.colors.forEach((el: any) => {
           images[el.id] = el.images.map((el: any) => {
-            return { file: null, preview: `http://localhost:5000${el.url}` };
+            return { file: null, preview: `http://34.75.95.89:5000${el.url}` };
           });
         });
 

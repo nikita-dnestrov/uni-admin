@@ -93,7 +93,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="text-slate-700 font-bold text-2xl mb-4">Orders</div>
+      <div className="text-slate-700 font-bold text-2xl mb-4">Admins</div>
       <div className="flex gap-10 justify-between">
         <Card className="w-full">
           <CardHeader className="px-7 flex justify-between flex-row">

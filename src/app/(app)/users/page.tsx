@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../../../components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../../../components/ui/table";
 import { Button } from "../../../components/ui/button";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Input } from "../../../components/ui/input";
 
 import { userPageApiService } from "./api";
@@ -18,7 +18,7 @@ type TForm = {
 
 export default function Page() {
   const [users, setUsers] = useState<any[]>([]);
-
+  const [search, setSearch] = useState("");
   const [isEditing, setIsEditing] = useState<{
     open: boolean;
     populationData: any;
@@ -50,9 +50,19 @@ export default function Page() {
     setIsEditing({ open, populationData });
   };
 
+  const handleSearch = useCallback(async () => {
+    const queryObj: any = { limit: 10, page: 1, search };
+
+    //@ts-ignore
+    const query = new URLSearchParams(queryObj);
+    const data = await userPageApiService.getUsers(`?${query.toString()}`);
+
+    setUsers(data.users);
+  }, [search]);
+
   return (
     <>
-      <div className="text-slate-700 font-bold text-2xl mb-4">Orders</div>
+      <div className="text-slate-700 font-bold text-2xl mb-4">Users</div>
       <div className="flex gap-10 justify-between">
         <Card className="w-full">
           <CardHeader className="px-7 flex justify-between flex-row">
@@ -61,8 +71,10 @@ export default function Page() {
               <CardDescription>List of users</CardDescription>
             </div>
             <div className="flex gap-5">
-              <Input />
-              <Button variant="outline">Search</Button>
+              <Input value={search} onChange={(e) => setSearch(e.target.value)} />
+              <Button onClick={handleSearch} type="button" variant="outline">
+                Search
+              </Button>
             </div>
           </CardHeader>
           <CardContent>
@@ -90,7 +102,7 @@ export default function Page() {
                       </TableCell>
                       <TableCell className="hidden md:table-cell">
                         <Button onClick={() => handleEditingComponent(true, el)} variant="outline">
-                          Edit
+                          Details
                         </Button>
                       </TableCell>
                     </TableRow>

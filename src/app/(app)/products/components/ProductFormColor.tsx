@@ -117,14 +117,7 @@ export const ProductFormColor = ({
                       id="size"
                     />
                   </div>
-                  <div>
-                    <Label htmlFor="stock">Stock </Label>
-                    <Input
-                      onChange={(e) => onSizeValueUpdate(el.id, "stock", e.target.value)}
-                      value={el.stock}
-                      id="stock"
-                    />
-                  </div>
+
                   <div>
                     <Label htmlFor="price">Price </Label>
                     <Input

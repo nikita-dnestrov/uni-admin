@@ -1,6 +1,16 @@
 import axios from "axios";
 import { TProduct } from "../../types/Product";
-import { createBaseProduct, createProductColor, deleteProductById, getProductById, uploadImages } from "./products";
+import {
+  createBaseProduct,
+  createProductColor,
+  deleteProductById,
+  getColor,
+  getProductById,
+  updateColor,
+  updateProduct,
+  updateSize,
+  uploadImages,
+} from "./products";
 
 export const apiService = {
   products: {
@@ -9,5 +19,9 @@ export const apiService = {
     uploadImage: uploadImages,
     getProductById: getProductById,
     deleteProductById,
+    updateColor,
+    updateProduct,
+    updateSize,
+    getColor,
   },
 };

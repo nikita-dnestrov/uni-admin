@@ -229,11 +229,19 @@ export default function Page() {
               </div>
               <div className="flex justify-between">
                 <div>City</div>
-                <div>{isEditing.populationData.user.address.city}</div>
+                <div>
+                  {isEditing.populationData.user.address?.city
+                    ? isEditing.populationData.user.address?.city
+                    : "Not specified"}
+                </div>
               </div>
               <div className="flex justify-between">
                 <div>Street</div>
-                <div>{isEditing.populationData.user.address.street}</div>
+                <div>
+                  {isEditing.populationData.user.address?.street
+                    ? isEditing.populationData.user.address?.street
+                    : "Not specified"}
+                </div>
               </div>
               <div className="flex justify-between">
                 <div>Email</div>

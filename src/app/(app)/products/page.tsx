@@ -70,7 +70,6 @@ export default function Page() {
                 <TableRow>
                   <TableHead>Image</TableHead>
                   <TableHead className="table-cell">Name</TableHead>
-                  <TableHead className="table-cell">Average Stock</TableHead>
                   <TableHead className="table-cell">Average Price</TableHead>
                   <TableHead className="table-cell">Is Archived</TableHead>
                   <TableHead className="table-cell">Edit</TableHead>
@@ -82,24 +81,16 @@ export default function Page() {
                     return (
                       <TableRow key={el.id} className="bg-accent">
                         <TableCell>
-                          <img width={100} height={100} src={`${BASE_IMAGE_URL}${el.colors[0].images[0].url}`} />
+                          {el.colors.length && el.colors[0].images.length ? (
+                            <img width={100} height={100} src={`${BASE_IMAGE_URL}${el.colors[0].images[0].url}`} />
+                          ) : (
+                            <div></div>
+                          )}
                         </TableCell>
                         <TableCell>
                           <div className="font-medium">{el.name}</div>
                         </TableCell>
-                        <TableCell className="hidden sm:table-cell">
-                          {el.colors.reduce((acc, el) => {
-                            const value = el.sizes.reduce((acc2, el2) => {
-                              return acc2 + el2.stock;
-                            }, 0);
 
-                            return acc + value;
-                          }, 0)}
-                          /
-                          {el.colors.reduce((acc, el) => {
-                            return acc + el.sizes.length;
-                          }, 0)}
-                        </TableCell>
                         <TableCell className="hidden sm:table-cell">
                           {el.colors.reduce((acc, el) => {
                             const value = el.sizes.reduce((acc2, el2) => {
@@ -107,11 +98,10 @@ export default function Page() {
                             }, 0);
 
                             return acc + value;
-                          }, 0)}
-                          /
-                          {el.colors.reduce((acc, el) => {
-                            return acc + el.sizes.length;
-                          }, 0)}
+                          }, 0) /
+                            el.colors.reduce((acc, el) => {
+                              return acc + el.sizes.length;
+                            }, 0)}
                         </TableCell>
                         <TableCell className="hidden md:table-cell">{el.isArchived ? "Yes" : "No"}</TableCell>
                         <TableCell className="hidden md:table-cell">

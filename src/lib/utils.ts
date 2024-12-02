@@ -7,10 +7,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api",
-  headers: {
-    Authorization:
-      "Bearer " +
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBjMzUwNDllLTFmNzgtNGMxMC04ZDE3LTllY2IxNjYwYzY1OCIsImVtYWlsIjoidGVzdEBtYWlsLmNvbSIsImlhdCI6MTczMDA0NDgwOH0.WjvWW_1MdqttT0nFXDwTHstxIFanCRrn_DxZFXPVi3U",
-  },
+  baseURL: "http://34.75.95.89:5000/api",
 });
